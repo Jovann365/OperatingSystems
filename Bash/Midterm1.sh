@@ -1,4 +1,4 @@
-  GNU nano 7.2                                           results.sh                                                     #!/bin/bash
+#!/bin/bash
 
 if [ $# -lt 1 ]
 then
