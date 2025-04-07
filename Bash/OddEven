@@ -1,0 +1,17 @@
+#!/bin/bash
+
+files=`ls`
+mkdir paren
+mkdir neparen
+
+for file in $files
+do
+        count=`echo $file | wc -c | awk '{print $1;}'`
+        count=$(($count - 1))
+        if [ $(($count % 2)) -eq 0 ]
+        then
+                cp "$file" paren
+        else
+                cp "$file" neparen
+        fi
+done
