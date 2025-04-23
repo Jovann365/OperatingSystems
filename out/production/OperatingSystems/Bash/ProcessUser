@@ -1,0 +1,4 @@
+#!/bin/bash
+
+user=$1
+ps -el | grep "$user" | awk '{print $5;}' | sort | uniq -c | awk '{print;}'

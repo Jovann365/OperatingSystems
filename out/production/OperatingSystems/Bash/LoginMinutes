@@ -1,0 +1,4 @@
+#!/bin/bash
+
+user=$1
+awk -v u=$user '$1 ~ u {print $10;}' logins.txt | sed -e 's/(//' -e 's/)//' | awk -F: 'BEGIN{count = 0;} {count += $1+($2 / 60);} END{print count;}'
