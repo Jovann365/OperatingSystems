@@ -1,3 +1,5 @@
+package LaboratoryExercises.Lab3_Multithreading;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
