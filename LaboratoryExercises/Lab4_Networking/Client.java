@@ -24,9 +24,6 @@ public class Client extends Thread {
             BufferedWriter fileWriter = new BufferedWriter(new FileWriter("chatlog231044.txt", true));
             Scanner sc = new Scanner(System.in);
 
-            writer.write("hello:" + index + "\n");
-            writer.flush();
-
             fileWriter.write("hello:" + index + "\n");
             fileWriter.flush();
 
@@ -91,7 +88,7 @@ public class Client extends Thread {
     }
 
     public static void main(String[] args) {
-        Client client = new Client("194.149.135.49", 9753, "231044");
+        Client client = new Client("194.149.135.49", 9753, "2331044");
         client.start();
     }
 }
